@@ -140,50 +140,83 @@
 // console.log(str.ucWords('abcde abcde abcde')) //выведет 'Abcde Abcde Abcde'
 // -----------------------------------------------------------------------------
 
-class Animal {
-	constructor(type, age, name) {
-		this.type = type
-		this.age = age
-		this.name = name
-	}
-}
+// class Animal {
+// 	constructor(type, age, name) {
+// 		this.type = type
+// 		this.age = age
+// 		this.name = name
+// 	}
+// }
 
-class Dog extends Animal {
-	constructor(type, age, name, gav) {
-		super(type, age, name)
-		this.gav = gav
-	}
-	sayGav() {
-		console.log(`Gav ${this.gav} `)
-	}
-}
+// class Dog extends Animal {
+// 	constructor(type, age, name, gav) {
+// 		super(type, age, name)
+// 		this.gav = gav
+// 	}
+// 	sayGav() {
+// 		console.log(`Gav ${this.gav} `)
+// 	}
+// }
 
-class Cat extends Animal {
-	constructor(type, age, name, jump) {
-		super(type, age, name)
-		this.jump = jump
-	}
-	sayCat() {
-		console.log(`Прыгаю${this.jump}`)
-	}
-}
-class Wolf extends Dog {
-	constructor(type, age, name, weight) {
-		super(type, age, name)
-		this.weight = 20
-	}
-	sayWeight() {}
-}
-class Tiger extends Cat {
-	constructor(type, age, name, weight) {
-		super(type, age, name)
-		this.weight = 50
-	}
-	sayWeight() {}
-}
+// class Cat extends Animal {
+// 	constructor(type, age, name, jump) {
+// 		super(type, age, name)
+// 		this.jump = jump
+// 	}
+// 	sayCat() {
+// 		console.log(`Прыгаю `)
+// 	}
+// }
+// class Wolf extends Dog {
+// 	constructor(type, age, name, weight) {
+// 		super(type, age, name)
+// 		this.weight = 20
+// 	}
+// 	sayWeight() {
+// 		console.log(20)
+// 	}
+// }
+// class Tiger extends Cat {
+// 	constructor(type, age, name, weight) {
+// 		super(type, age, name)
+// 		this.weight = 50
+// 	}
+// 	sayWeight() {
+// 		console.log(50)
+// 	}
+// }
 
-console.log(new Animal('predator', 20, 'Rembo'))
-console.log(new Dog('Gav-Gav'))
-console.log(new Cat('Прыгаю'))
-console.log(new Wolf())
-console.log(new Tiger())
+// const animal = new Animal('predator', 20, 'Rembo')
+// const dog = new Dog('mammal', 4, 'Sunny', 1)
+// const cat = new Cat('cat', 5, 'Lucky')
+// const wolf = new Wolf('predator ', 7, 'Beowolf')
+// const tiger = new Tiger('cat ', 15, 'Sherhan')
+
+// console.log(animal)
+// dog.sayGav()
+// cat.sayCat()
+// wolf.sayWeight()
+// tiger.sayWeight()
+// -----------------------------------------------------------------
+// class Validator {
+// 	constructor() {}
+// 	isEmail(str) {
+// 		return str.indexOf('@') !== -1 && str.indexOf('.') !== -1
+// 	}
+// 	isDomain(str) {
+// 		return str.indexOf('.com') !== -1 || str.indexOf('.net') !== -1
+// 	}
+// 	isDate(str) {
+// 		let date = str.match(/[0-9]{2}\.[0-9]{2}\.[0-9]{4}/)
+// 		return date === null ? false : true
+// 	}
+// 	isPhone(str) {
+// 		let phone = str.match(/\+996\ \([0-9]{3}\)\ [0-9]{2}-[0-9]{2}-[0-9]{2}/)
+// 		return phone === null ? false : true
+// 	}
+// }
+// let validator = new Validator()
+// console.log(validator.isEmail('kam@gmail.com'))
+// console.log(validator.isDomain('net.net'))
+// console.log(validator.isDate('22.10.1989'))
+// console.log(validator.isPhone('+996 (555) 00-83-77'))
